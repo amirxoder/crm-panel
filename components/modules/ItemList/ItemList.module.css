@@ -1,0 +1,71 @@
+.products {
+  border: 2px solid var(--secondary-black);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.products h4 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: var(--perpul-color) !important;
+}
+
+.product {
+  border: 2px solid var(--secondary-black);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  position: relative;
+  animation: show 13s ease-in linear;
+  transition: all 1s ease;
+}
+
+.product:hover {
+  background-color: black;
+}
+
+.pq {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.pq input[type="number"]::-webkit-inner-spin-button {
+  opacity: 0.2;
+}
+
+.addItem {
+  width: 100%;
+  color: #a2a2a2;
+  border: 1px solid #a2a2a26e;
+  background-color: var(--secondary-black);
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.removeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--red-color);
+  color: var(--text-color);
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .pq {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

@@ -1,0 +1,42 @@
+.addCustomer {
+}
+
+.addCustomer h4 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.btns {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.btns button {
+  border: none;
+  padding: 0.4rem 1.2rem;
+  margin: 2rem 0;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: var(--text-color);
+}
+.btns button:nth-child(1) {
+  background-color: var(--red-color);
+}
+
+.btns button:nth-child(2) {
+  background-color: #6e3cbc;
+}
+
+.btns button:hover {
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+  .addCustomer h4 {
+    font-size: 2rem;
+  }
+}
