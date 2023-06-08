@@ -16,7 +16,7 @@ const Form = ({ form, setForm }) => {
   return (
     <div>
       {Object.keys(form)
-        .slice(0, 6)
+        .slice(0, 7)
         .map((item, index) => (
           <FormInput
             key={index}

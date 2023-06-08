@@ -56,6 +56,27 @@ a {
   border: 1px solid var(--text-color);
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary-black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-black);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(50, 50, 50);
+}
+
 @media screen and (max-width: 768px) {
   .primary-btn {
     font-size: 0.8rem;
