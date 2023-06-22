@@ -1,6 +1,4 @@
 import React from "react";
-
-import styles from "./Form.module.css";
 import ProductsList from "../ItemList/ProductsList";
 import FormInput from "../../elements/FormInput/FormInput";
 
@@ -23,10 +21,11 @@ const Form = ({ form, setForm }) => {
             name={item}
             label={item}
             onChange={inputChangeHandler}
-            value={Object.values(form).item}
-            type={item === "data" ? "date" : "text"}
+            value={Object.values(form)[index]}
+            type={item === "date" ? "date" : "text"}
           />
         ))}
+
       <ProductsList form={form} setForm={setForm} />
     </div>
   );

@@ -13,7 +13,7 @@ const AddCustomer = () => {
     phone: "",
     address: "",
     postalCode: "",
-    data: "",
+    date: "",
     products: [],
   });
 
@@ -26,7 +26,7 @@ const AddCustomer = () => {
       email: "",
       address: "",
       postalCode: "",
-      data: "",
+      date: "",
       products: [],
     });
     push("/");
